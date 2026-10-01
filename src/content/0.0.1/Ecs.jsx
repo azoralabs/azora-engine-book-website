@@ -22,7 +22,7 @@ pack Player
 
 @Resource
 pack MovementSettings {
-    var speed: Real
+    var speed: Double
 }`}</CodeBlock>
       <Note>
         Decorators describe engine meaning without changing the pack into a hidden runtime object. A component remains

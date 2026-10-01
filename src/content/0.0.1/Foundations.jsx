@@ -32,7 +32,7 @@ export function Welcome() {
         window to data-oriented worlds, GPU rendering, input, audio, reactive UI, physics, animation and tilemaps.
       </ChapterIntro>
       <Note tone="green">
-        Examples use Azora Lang 0.0.4 syntax. The facade import <code>import engine</code> exposes the public engine
+        Examples use Azora Lang 0.1.0-dev syntax. The facade import <code>import engine</code> exposes the public engine
         packages, while focused imports such as <code>import engine.ecs</code> keep dependency closures small.
       </Note>
       <Subheading>What the engine optimizes for</Subheading>
@@ -91,7 +91,7 @@ export function Installation() {
         and let <code>azpm</code> resolve only the packages imported by that project.
       </Lead>
       <Steps>
-        <li>Install Azora Lang 0.0.4 and verify the compiler is available.</li>
+        <li>Install Azora Lang 0.1.0-dev and verify the compiler is available.</li>
         <li>Build or download the Azora Engine library bundle.</li>
         <li>Install the bundle in Azora Studio or under the local Azora libraries directory.</li>
         <li>Create an App, Game, ECS, 2D side-scroller or other engine template.</li>

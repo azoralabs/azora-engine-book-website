@@ -109,8 +109,8 @@ export function TwoDimensionalRendering() {
         2D commands use window coordinates with the origin at the top-left. Images and sprite regions are submitted as
         textured quads while UI geometry uses the same active frame.
       </Lead>
-      <CodeBlock title="2D overlay">{`fin width = app.width() as Real
-fin height = app.height() as Real
+      <CodeBlock title="2D overlay">{`fin width = app.width() as Double
+fin height = app.height() as Double
 
 app.uiRect(16.0, 16.0, 260.0, 72.0, 0.03, 0.05, 0.08, 0.88)
 app.uiTextColored("Health 84", 32.0, 30.0, 20.0, 0.92, 0.96, 1.0)
@@ -149,7 +149,7 @@ export function ShadersAndBackends() {
         ['webgl3dFragmentShaderSource()', 'WebGL 3D fragment stage counterpart.'],
         ['webgl2dVertex/FragmentShaderSource()', 'Browser sprite and UI pipeline stages.'],
       ]} />
-      <CodeBlock title="Portable browser loop">{`task main() {
+      <CodeBlock title="Portable browser loop">{`async func main() {
     engine::run3d(960, 540)
 
     loop {
